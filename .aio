@@ -1,0 +1,38 @@
+{
+  "project": {
+    "id": "4566206088344582751",
+    "name": "ElectoralAmberHawk",
+    "title": "DM CDN Cache Invalidation",
+    "org": {
+      "id": "49996",
+      "name": "Microsoft - MSCOM",
+      "ims_org_id": "EA76ADE95776D2EC7F000101@AdobeOrg"
+    },
+    "workspace": {
+      "id": "4566206088344583757",
+      "name": "Development",
+      "title": "Development",
+      "action_url": "https://49996-electoralamberhawk-development.adobeioruntime.net",
+      "app_url": "https://49996-electoralamberhawk-development.adobeio-static.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "125142",
+            "name": "Project_1605845831290J",
+            "integration_type": "service"
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          },
+          {
+            "code": "CloudIntegrationSDK",
+            "name": "I/O Events"
+          }
+        ]
+      }
+    }
+  }
+}

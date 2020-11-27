@@ -1,0 +1,35 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      generic:
+        function: actions/generic/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: true
+          final: true
+      publish-events:
+        function: actions/publish-events/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+      cache-invalidation:
+        function: actions/cache-invalidation/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          aemAuthorHost : $AEM_AUTHOR_HOST
+          aemBasicAuth : $AEM_BASIC_AUTH
+          dmAPIEp : $DM_API_EP
+        annotations:
+          require-adobe-auth: false
+          final: true
