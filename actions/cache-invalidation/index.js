@@ -51,7 +51,7 @@ async function invalidateCache(dmAPIEp, scene7File) {
     '<Request xmlns="http://www.scene7.com/IpsApi/xsd/2019-09-10-beta">' +
     '    <authHeader xmlns="http://www.scene7.com/IpsApi/xsd/2019-09-10-beta">' +
     '         <user>dmintdev@microsoft.com</user>' +
-    '         <password>AEM-Dyn-Dev-10_21_2020</password>' +
+    '         <password>replaceme</password>' +
     '         <appName>Adobe Experience Manager</appName>' +
     '         <appVersion>6.5.6.0</appVersion>' +
     '         <faultHttpStatusCode>200</faultHttpStatusCode>' +
